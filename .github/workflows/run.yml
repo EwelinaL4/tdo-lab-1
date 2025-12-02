@@ -4,6 +4,11 @@ on: workflow_dispatch
 jobs:
   run-it:
     runs-on: ubuntu-latest
+
+    env:              # <-- tu ustawiamy zmienną środowiskową
+      MY_NAME: "GitHub Student"
+      FAV_COLOR: "blue"
+
     steps:
       - uses: actions/checkout@v4
 
